@@ -4,6 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="images/loupe.png"/>
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
 	<title>Société Fringues</title>
@@ -19,20 +23,36 @@
 	</header>
 
 		<nav class="navbar pt-0 pb-0">
-			<div class="container">
-			  	<ul class="d-flex pl-0">
+			<div class="container topnav" id="myTopnav">
+				<div class="navigation">
+					<a href="#" class="active">Accueil</a>
+					<a href="#">Pantalons</a>
+					<a href="#">Chemises</a>
+					<a href="#">Vestes</a>
+				</div>
+				
+			  	<!-- <ul class="d-flex pl-0">
 					<li><a href="#"> Accueil</a></li>
 					<li><a href="#"> Pantalons</a></li>
 					<li><a href="#"> Chemises</a></li>
 					<li><a href="#"> Vestes</a></li>
-				</ul>	
+				</ul>	 -->
 				<form>
 					<input type="text" placeholder="Recherchez un modèle...">
 					<input class="ml-2" type="image" src="images/loupe.png" alt="Recherche">
 				</form>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<!-- <i class="fa fa-bars"></i> -->
+					<div class="burger-menu" onclick="burgerMenu(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</a>
+				
 			</div>
 			
-		  </nav>
+		</nav>
 		  <hr>
 
 
@@ -87,6 +107,7 @@
 		</footer>
 
 	
+<script type="text/javascript" src="main.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
