@@ -1,7 +1,3 @@
-function burgerMenu(y) {
-    y.classList.toggle("change");
-}
-
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -11,3 +7,7 @@ function myFunction() {
     }
 }
 
+
+function burgerMenu(y) {
+    y.classList.toggle("change");
+}
